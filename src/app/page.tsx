@@ -28,7 +28,7 @@ function CardBack({ className = "" }: { className?: string }) {
       className={`w-[180px] h-[277px] md:w-[220px] md:h-[340px] rounded-lg overflow-hidden border border-amber-400/70 flex-shrink-0 ${className}`}
       style={{ boxShadow: "0 0 25px rgba(212, 175, 55, 0.15)" }}
     >
-      <img src="/cards/back.png" alt="Card back" className="w-full h-full object-cover" />
+      <img src="/cards/back.webp" alt="Card back" className="w-full h-full object-cover" />
     </div>
   );
 }
@@ -43,7 +43,7 @@ function CardFront({ card, size = "normal" }: { card: TarotCard; size?: "normal"
       style={{ boxShadow: "0 0 40px rgba(212, 175, 55, 0.25)" }}
     >
       <img
-        src={`/cards/${card.id}.png`}
+        src={`/cards/${card.id}.webp`}
         alt={`${card.name} - ${card.nameEn}`}
         className="w-full h-full object-cover"
       />
